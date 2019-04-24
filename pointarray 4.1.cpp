@@ -6,7 +6,7 @@ class PointArray
 	    int size;
 	    Point *points;
 
-	    void reslize(int size);
+	    void resize(int size);
 
 	public:
 		PointArray();
