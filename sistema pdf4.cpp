@@ -12,11 +12,11 @@ class Point{
 		int getY()const{
 			return y;
 		}
-		void setX(int x){
-			this->x=x;
+		void setX(int xx){
+			xx=x;
 		}
-		void setY(int y){
-			this->y=y;
+		void setY(int yy){
+			yy=y;
 		}
 };
 
