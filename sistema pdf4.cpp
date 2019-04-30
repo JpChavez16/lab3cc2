@@ -191,14 +191,19 @@ class Triangle : public Polygon {
 			return sqrt( s * (s-a) * (s-b) * (s-c) );
 		}
 };
-void printAttributes(Polygon *p) {
-	cout << "pâ€™s area is " << p->area() << ".\n";
-	cout << "pâ€™s points are:\n";
-	const PointArray *pa = p->getPoints();
-	for(int i = 0; i < pa ->getSize(); ++i) {
-		cout << "(" << pa ->get(i) ->getX() << ", " << pa ->get(i) -> getY() << ")\n";
-	}
-}
+void printAttributes ( Polygon *p) 
+{
+     cout << "p’s area is " << p-> area () << ".\n";
+
+     cout << "p’s points are :\n";
+     const PointArray *pa = p-> getPoints ();
+     for(int i = 0; i < pa -> getSize (); ++i) 
+     {
+         cout << "(" << pa ->get (i) ->getX () << ", " << pa ->get (i) ->
+         getY () << ")\n";
+     }
+
+ }
 int main(){
 	cout << "Enter lower left and upper right coords of rectangle as four space separated integers: ";
 	int llx, lly, urx, ury;
